@@ -10,7 +10,7 @@ Reflex-1 is a decision model for routing, guardrails and classification. It retu
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/matu79go/reflex-1/blob/main/notebooks/quickstart.ipynb)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Reflex--1--4B-yellow)](https://huggingface.co/matu79go/Reflex-1-4B)
 
-Weights: [huggingface.co/matu79go/Reflex-1-4B](https://huggingface.co/matu79go/Reflex-1-4B) · Base model: Google Gemma 4 E4B (Apache 2.0)
+Weights: [huggingface.co/matu79go/Reflex-1-4B](https://huggingface.co/matu79go/Reflex-1-4B) · All variants: [Reflex-1 collection](https://huggingface.co/collections/matu79go/reflex-1-6ab9c9c2a8842e5c1f599ce5) · Base model: Google Gemma 4 E4B (Apache 2.0)
 
 ## At a glance
 
