@@ -100,10 +100,13 @@ Apache License 2.0. Derived from Google Gemma 4 E4B (Apache 2.0). Not affiliated
 ## Citation
 
 ```bibtex
-@misc{reflex1_2026,
-  title  = {Reflex-1: frontier-LLM accuracy at Jev speed with a 4B open model},
-  author = {suzuki_shoten},
-  year   = {2026},
-  url    = {https://huggingface.co/matu79go/Reflex-1-4B}
+@software{suzuki_reflex1_2026,
+  author    = {Suzuki, Gosuke},
+  title     = {Reflex-1: frontier-LLM accuracy at Jev speed with a 4B open model},
+  year      = {2026},
+  version   = {1.0.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23005201},
+  url       = {https://doi.org/10.5281/zenodo.23005201}
 }
 ```

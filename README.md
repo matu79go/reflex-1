@@ -9,6 +9,7 @@ Reflex-1 is a decision model for routing, guardrails and classification. It retu
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/matu79go/reflex-1/blob/main/notebooks/quickstart.ipynb)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Reflex--1--4B-yellow)](https://huggingface.co/matu79go/Reflex-1-4B)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23005201.svg)](https://doi.org/10.5281/zenodo.23005201)
 
 Weights: [huggingface.co/matu79go/Reflex-1-4B](https://huggingface.co/matu79go/Reflex-1-4B) · All variants: [Reflex-1 collection](https://huggingface.co/collections/matu79go/reflex-1-6ab9c9c2a8842e5c1f599ce5) · Base model: Google Gemma 4 E4B (Apache 2.0)
 
@@ -135,4 +136,18 @@ Skills are trained per judgment. Training code is not included in this repositor
 - Jev is a product of TypeSafe AI; comparison results were measured by the author via OpenRouter (September 2026) and are not endorsed by TypeSafe AI.
 - Benchmarks: CLINC150 (Larson et al., 2019, CC BY 3.0), MASSIVE (FitzGerald et al., 2022, CC BY 4.0), Civil Comments (Jigsaw, CC0), BIG-Bench Hard (Suzgun et al., 2022, MIT), tweet_eval (Barbieri et al., 2020).
 - Demo photos: CC0 / public domain, Wikimedia Commons.
-- Author: suzuki_shoten
+- Author: Gosuke Suzuki (Suzuki Shoten)
+
+## Citation
+
+```bibtex
+@software{suzuki_reflex1_2026,
+  author    = {Suzuki, Gosuke},
+  title     = {Reflex-1: frontier-LLM accuracy at Jev speed with a 4B open model},
+  year      = {2026},
+  version   = {1.0.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23005201},
+  url       = {https://doi.org/10.5281/zenodo.23005201}
+}
+```

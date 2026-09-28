@@ -8,6 +8,7 @@ authors:
     affiliation: Suzuki Shoten
 version: 1.0.0
 date-released: 2026-09-28
+doi: 10.5281/zenodo.23005201
 license: Apache-2.0
 repository-code: "https://github.com/matu79go/reflex-1"
 url: "https://huggingface.co/matu79go/Reflex-1-4B"
