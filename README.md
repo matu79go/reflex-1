@@ -12,6 +12,21 @@ Reflex-1 is a decision model for routing, guardrails and classification. It retu
 
 Weights: [huggingface.co/matu79go/Reflex-1-4B](https://huggingface.co/matu79go/Reflex-1-4B) · Base model: Google Gemma 4 E4B (Apache 2.0)
 
+## At a glance
+
+**Classification: same accuracy, a different speed class.** Five public benchmarks (intent, utterance intent, emotion, sentiment, moderation), identical inputs and options.
+
+![Latency per decision](media/chart_latency.png)
+
+<p>
+<img src="media/chart_scatter_text.png" width="49%" alt="Text classification: accuracy x speed">
+<img src="media/chart_scatter_image.png" width="49%" alt="Image classification: accuracy x speed">
+</p>
+
+**Reasoning too: train it, and get frontier-LLM accuracy at Jev speed.** Mean of five trained logic tasks; the shaded band is the sub-second range where Jev answers.
+
+![Reasoning: accuracy x speed](media/chart_reasoning.png)
+
 ## Demos
 
 **Instant classification vs Jev** — the options the models actually saw; a tag appears the moment each model answers ([full video](media/instant_classification.mp4))
