@@ -1,0 +1,3 @@
+{"state": "Question: Ryan tells the truth. Michael says Ryan lies. Rashida says Michael tells the truth. Antwan says Rashida tells the truth. Leda says Antwan tells the truth. Andree says Leda tells the truth. Christie says Andree lies. Raymond says Christie tells the truth. Willian says Raymond lies. Millicent says Willian tells the truth. Does Millicent tell the truth?",
+ "mode": "deep", "skill": "web_of_lies", "trace": true,
+ "questions": {"answer": {"type": "choice", "instructions": "Answer Yes or No.", "criteria": {"Yes": "", "No": ""}}}}

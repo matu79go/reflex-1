@@ -1,0 +1,47 @@
+{
+ "web_of_lies": {
+  "path": "hf://matu79go/Reflex-1-4B/skills/web_of_lies",
+  "about": "Chain of truth-tellers and liars (BIG-Bench Hard web_of_lies format). One latent step per person.",
+  "task": {
+   "question": "Answer Yes or No.",
+   "options": {
+    "Yes": "Yes.",
+    "No": "No."
+   }
+  },
+  "steps": {
+   "regex": "\\bsays\\b",
+   "plus": 1
+  }
+ },
+ "boolean_expressions": {
+  "path": "hf://matu79go/Reflex-1-4B/skills/boolean_expressions",
+  "about": "Evaluate a not/and/or expression (BIG-Bench Hard boolean_expressions format). One latent step per operator, plus one.",
+  "task": {
+   "question": "Is the expression True or False?",
+   "options": {
+    "True": "True.",
+    "False": "False."
+   }
+  },
+  "steps": {
+   "regex": "\\b(?:not|and|or)\\b",
+   "plus": 1
+  }
+ },
+ "navigate": {
+  "path": "hf://matu79go/Reflex-1-4B/skills/navigate",
+  "about": "Do the instructions return you to the start? (BIG-Bench Hard navigate format, without the Options block). One latent step per instruction, plus one.",
+  "task": {
+   "question": "Answer Yes or No.",
+   "options": {
+    "Yes": "Yes.",
+    "No": "No."
+   }
+  },
+  "steps": {
+   "regex": "(?:Take \\d+ steps?|Turn \\w+)",
+   "plus": 1
+  }
+ }
+}

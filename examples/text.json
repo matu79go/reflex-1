@@ -1,0 +1,2 @@
+{"state": "Comment: You are an absolute clown.",
+ "questions": {"why": {"type": "text", "instructions": "In one sentence, is this comment insulting? Why?", "max_tokens": 60}}}

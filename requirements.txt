@@ -1,0 +1,9 @@
+torch>=2.4
+torchvision
+transformers>=5.17
+peft>=0.21
+bitsandbytes>=0.50
+accelerate
+safetensors
+pillow
+huggingface_hub

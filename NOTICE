@@ -1,0 +1,7 @@
+Reflex-1
+Copyright 2026 suzuki_shoten
+
+This product includes model weights derived from Google Gemma 4 E4B
+(https://huggingface.co/google/gemma-4-E4B-it), licensed under the Apache License 2.0.
+The derived weights (LoRA adapters and latent-reasoning modules) were trained by suzuki_shoten.
+Reflex-1 is not affiliated with or endorsed by Google.

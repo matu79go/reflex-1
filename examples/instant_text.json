@@ -1,0 +1,6 @@
+{"state": "I want to know my credit rating",
+ "questions": {"desk": {"type": "choice",
+   "instructions": "Which desk should handle this inquiry?",
+   "criteria": {"credit_score": "questions about credit scores or ratings",
+                "transfer": "moving money between accounts",
+                "none": "none of these"}}}}
