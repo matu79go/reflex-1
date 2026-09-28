@@ -7,7 +7,24 @@ Reflex-1 is a decision model for routing, guardrails and classification. It retu
 - **Classification (`instant`)** — answers in the same accuracy band as frontier LLMs such as GPT-5.6 and Gemini 3.8, faster than the dedicated judgment API Jev. No training needed. Text and images.
 - **Reasoning (`deep`)** — once trained on a judgment, Reflex-1 reaches frontier-level accuracy on decisions that require reasoning, in about a second. It uses **latent reasoning**: the model reasons internally instead of writing its reasoning out as text, and each step can be decoded back into words (`trace`).
 
-Weights: [huggingface.co/matu79go/Reflex-1-4B](https://huggingface.co/matu79go/Reflex-1-4B) · Blog: _link TBD_ · Base model: Google Gemma 4 E4B (Apache 2.0)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/matu79go/reflex-1/blob/main/notebooks/quickstart.ipynb)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Reflex--1--4B-yellow)](https://huggingface.co/matu79go/Reflex-1-4B)
+
+Weights: [huggingface.co/matu79go/Reflex-1-4B](https://huggingface.co/matu79go/Reflex-1-4B) · Base model: Google Gemma 4 E4B (Apache 2.0)
+
+## Demos
+
+**Instant classification vs Jev** — the options the models actually saw; a tag appears the moment each model answers ([full video](media/instant_classification.mp4))
+
+![Instant classification race](media/instant_classification.gif)
+
+**Reasoning: frontier LLMs, Jev and Reflex-1** — a 10-person chain of liars; tags on the left are Reflex-1's latent steps decoded into words ([full video](media/reasoning_race.mp4))
+
+![Reasoning race](media/reasoning_race.gif)
+
+**Image classification** — CC0 / public-domain photos from Wikimedia Commons, about 0.3 s each ([full video](media/image_classification.mp4))
+
+![Image classification](media/image_classification.gif)
 
 ## Results
 
@@ -79,6 +96,8 @@ Skills are trained per judgment. Training code is not included in this repositor
 
 ## Try it in Colab
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/matu79go/reflex-1/blob/main/notebooks/quickstart.ipynb)
+
 `notebooks/quickstart.ipynb` walks through intent classification, image classification, a reasoning question with its trace, and a free-text answer.
 
 ## Notes
@@ -91,4 +110,5 @@ Skills are trained per judgment. Training code is not included in this repositor
 - Code and adapters: Apache License 2.0. Weights are derived from Google Gemma 4 E4B (Apache 2.0); see `NOTICE`. Reflex-1 is not affiliated with or endorsed by Google.
 - Jev is a product of TypeSafe AI; comparison results were measured by the author via OpenRouter (September 2026) and are not endorsed by TypeSafe AI.
 - Benchmarks: CLINC150 (Larson et al., 2019, CC BY 3.0), MASSIVE (FitzGerald et al., 2022, CC BY 4.0), Civil Comments (Jigsaw, CC0), BIG-Bench Hard (Suzgun et al., 2022, MIT), tweet_eval (Barbieri et al., 2020).
+- Demo photos: CC0 / public domain, Wikimedia Commons.
 - Author: suzuki_shoten
