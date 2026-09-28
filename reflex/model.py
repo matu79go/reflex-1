@@ -48,6 +48,10 @@ class Reflex:
         self.proc = AutoProcessor.from_pretrained(base)
         self.tok = self.proc.tokenizer
         kw = {}
+        from transformers import AutoConfig
+        prequant = getattr(AutoConfig.from_pretrained(base), "quantization_config", None) is not None
+        if prequant:
+            quant = "none"  # the checkpoint is already quantized (e.g. matu79go/Reflex-1-4B-bnb-4bit)
         if quant != "none":
             skip = ["lm_head", "vision_tower", "audio_tower", "embed_vision", "embed_audio"]
             kw["quantization_config"] = (BitsAndBytesConfig(load_in_8bit=True, llm_int8_skip_modules=skip) if quant == "int8" else

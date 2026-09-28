@@ -41,7 +41,7 @@ Each skill folder holds `adapter_config.json`, `adapter_model.safetensors` (PEFT
 ```bash
 git clone https://github.com/matu79go/reflex-1.git && cd reflex-1
 pip install -r requirements.txt
-python -m reflex.server --skills skills.json --port 8097 --quant nf4
+python -m reflex.server --base matu79go/Reflex-1-4B-bnb-4bit --skills skills.json --port 8097
 ```
 
 ```json
@@ -50,6 +50,8 @@ POST /v1/decisions
  "mode": "deep", "skill": "web_of_lies", "trace": true,
  "questions": {"answer": {"type": "choice", "instructions": "Answer Yes or No.", "criteria": {"Yes": "", "No": ""}}}}
 ```
+
+Base model: use the pre-quantized [matu79go/Reflex-1-4B-bnb-4bit](https://huggingface.co/matu79go/Reflex-1-4B-bnb-4bit) (9.3 GB download) or the original `google/gemma-4-E4B-it` (about 16 GB, quantized at load time with `--quant nf4`). The skills work with both.
 
 ## Evaluation
 

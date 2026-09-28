@@ -69,10 +69,17 @@ Latency depends on the GPU. On NVIDIA GB10: classification ~0.1 s, a 10-person r
 ## Run the endpoint
 
 ```bash
-python -m reflex.server --skills skills.json --port 8097 --quant nf4
+python -m reflex.server --base matu79go/Reflex-1-4B-bnb-4bit --skills skills.json --port 8097
 ```
 
 The skill adapters listed in `skills.json` are downloaded from the Hugging Face Hub on first start. Omit `--skills` to run classification only.
+
+Base model variants (the skills work with both):
+
+| `--base` | Download | GPU memory | Notes |
+|---|---|---|---|
+| `matu79go/Reflex-1-4B-bnb-4bit` | 9.3 GB | ~10 GB | Pre-quantized 4-bit NF4. Recommended |
+| `google/gemma-4-E4B-it` (default) | ~16 GB | ~10 GB with `--quant nf4`, ~16 GB with `--quant none` | Original weights; quantized at load time |
 
 ## API
 
