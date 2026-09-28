@@ -64,7 +64,7 @@ pip install -r requirements.txt
 
 Requirements: an NVIDIA GPU with bfloat16 support and about 12 GB of free memory (4-bit). Tested on NVIDIA GB10 (aarch64, CUDA 13) and Google Colab L4.
 
-Latency depends on the GPU. On NVIDIA GB10: classification ~0.1 s, a 10-person reasoning question ~0.8 s. On Colab L4: classification ~0.1 s, the same reasoning question ~2.1–2.6 s (with `trace`).
+Latency depends on the GPU. On NVIDIA GB10: classification ~0.1 s, a 10-person reasoning question ~0.8 s. On Colab L4 with the 4-bit base: startup about 1 minute, classification ~0.26 s, image ~0.5 s, the same reasoning question ~2.2–2.7 s (with `trace`).
 
 ## Run the endpoint
 
