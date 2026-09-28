@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use Reflex-1, please cite it as below."
+title: "Reflex-1: frontier-LLM accuracy at Jev speed with a 4B open model"
+type: software
+authors:
+  - family-names: Suzuki
+    given-names: Gosuke
+    affiliation: Suzuki Shoten
+version: 1.0.0
+date-released: 2026-09-28
+license: Apache-2.0
+repository-code: "https://github.com/matu79go/reflex-1"
+url: "https://huggingface.co/matu79go/Reflex-1-4B"
+abstract: >-
+  Reflex-1 is a 4B open decision model built on Google Gemma 4 E4B for routing,
+  guardrails and classification. It returns a choice with probabilities instead of
+  generated text. In instant mode it reads option probabilities in a single forward
+  pass and matches the accuracy band of frontier LLMs (GPT-5.6, Gemini 3.8) and the
+  dedicated judgment API Jev on five public classification benchmarks, at 0.10 s
+  median latency on one GPU; it also classifies images. In deep mode, trained per
+  judgment, it solves decisions that require reasoning through latent reasoning,
+  with each latent step supervised through the model's shared LM head so that it
+  can be decoded back into words, reaching frontier-level accuracy at about one
+  second per question on trained tasks.
+keywords:
+  - decision model
+  - latent reasoning
+  - small language model
+  - classification
+  - Gemma
