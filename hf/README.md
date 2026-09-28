@@ -25,6 +25,16 @@ Reflex-1 is a decision model for routing, guardrails and classification, built o
 
 Code, endpoint and API: [github.com/matu79go/reflex-1](https://github.com/matu79go/reflex-1)
 
+## Variants
+
+| Repository | What it is | Download | GPU memory |
+|---|---|---|---|
+| **matu79go/Reflex-1-4B** (this page) | The Reflex-1 skills (LoRA + latent modules) and registry. Needed for every variant | 1.8 GB | — |
+| [matu79go/Reflex-1-4B-bnb-4bit](https://huggingface.co/matu79go/Reflex-1-4B-bnb-4bit) | Base model, pre-quantized 4-bit NF4. **Recommended** | 9.3 GB | ~10 GB |
+| [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it) | Base model, original BF16 (quantize at load with `--quant nf4`, or run in BF16 with `--quant none`) | ~16 GB | ~10 GB / ~16 GB |
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/matu79go/reflex-1/blob/main/notebooks/quickstart.ipynb)
+
 ## What is in this repository
 
 | Path | Contents |
